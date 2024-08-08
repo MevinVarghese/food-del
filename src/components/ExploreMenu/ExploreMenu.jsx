@@ -1,34 +1,34 @@
 import React from "react";
 import "./ExploreMenu.css";
-import { menu_list } from "../../assets/assets";
+import { shoe_list } from "../../assets/assets";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="explore-menu" id="explore-menu">
-      <h1>Explore our menu</h1>
+      <h1>Explore our Shoe Brands</h1>
       <p className="explore-menu-text">
-        Choose from a diverse menu featuring a delectable array of dishes . Our
-        mission is to satisfy your cravings and elevate your dining experience,
-        one delecious meal at a time.
+        Choose from a diverse selection of shoes featuring top brands. Our
+        mission is to provide you with the best quality footwear to elevate your
+        style and comfort.
       </p>
       <div className="explore-menu-list">
-        {menu_list.map((item, index) => {
+        {shoe_list.map((item, index) => {
           return (
             <div
               onClick={() =>
                 setCategory((prev) =>
-                  prev === item.menu_name ? "All" : item.menu_name
+                  prev === item.brand_name ? "All" : item.brand_name
                 )
               }
               key={index}
               className="explore-menu-list-item"
             >
               <img
-                className={category === item.menu_name ? "active" : ""}
-                src={item.menu_image}
+                className={category === item.brand_name ? "active" : ""}
+                src={item.brand_image}
                 alt=""
               />
-              <p>{item.menu_name}</p>
+              <p>{item.brand_name}</p>
             </div>
           );
         })}

@@ -1,19 +1,19 @@
 import React, { useContext } from "react";
-import "./FoodDisplay.css";
+import "./ShoeDisplay.css";
 import { StoreContext } from "../../context/StoreContext";
-import FoodItem from "../FoodItem/FoodItem";
+import ShoeItem from "../ShoeItem/ShoeItem";
 
-const FoodDisplay = ({ category }) => {
-  const { food_list } = useContext(StoreContext);
+const ShoeDisplay = ({ category }) => {
+  const { shoe_list } = useContext(StoreContext);
 
   return (
-    <div className="food-display" id="food-display">
-      <h2>Top dishes near you</h2>
-      <div className="food-display-list">
-        {food_list.map((item, index) => {
+    <div className="shoe-display" id="shoe-display">
+      <h2>Top Collections for you</h2>
+      <div className="shoe-display-list">
+        {shoe_list.map((item, index) => {
           if (category === "All" || category === item.category) {
             return (
-              <FoodItem
+              <ShoeItem
                 key={index}
                 id={item._id}
                 name={item.name}
@@ -29,4 +29,4 @@ const FoodDisplay = ({ category }) => {
   );
 };
 
-export default FoodDisplay;
+export default ShoeDisplay;

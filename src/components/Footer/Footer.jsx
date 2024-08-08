@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="" />
+          <h3>BRANDMART</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
             dignissimos incidunt. Repellendus porro, doloremque sunt ipsum
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-content-center">
-          <h2>COMPANY</h2>
+          <h5>COMPANY</h5>
           <ul>
             <li>Home</li>
             <li>About us</li>
@@ -30,16 +30,16 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-content-right">
-          <h2>GET IN TOUCH</h2>
+          <h5>GET IN TOUCH</h5>
           <ul>
-            <li>+1-212-456-7890</li>
-            <li>contact@tomato.com</li>
+            <li>+1-256-706-8410</li>
+            <li>contact@brandmart.com</li>
           </ul>
         </div>
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 © Tomato.com - All right Reserved.
+        Copyright 2024 © Brandmart.com - All right Reserved.
       </p>
     </div>
   );
